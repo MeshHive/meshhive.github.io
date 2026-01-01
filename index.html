@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MeshHive · 节点互联</title>
+</head>
+<body>
+    <h1>只是一点介绍喵~</h1>
+    
+    <h2>欢迎光临！</h2>
+    
+    <p style="text-align: center; font-size: 20px; font-weight: bold; color: #ffff00ff; background: linear-gradient(to right, #ff7e5f, #7b9cfeff);">
+    欢迎来到 MeshHive · 节点互联！喵～
+    </p>
+    
+    <blockquote>
+    想象一下喵：每一个独立开发者都是一颗<strong>小星星</strong>🌟，当星星之间连起<strong>闪闪发光的线</strong>，互相分享能量与代码喵～就会织成一张超～梦幻的网络！这就是我们的小宇宙哦。
+    </blockquote>
+    
+    <p>我们是一群喜欢动手创造的小伙伴，等你来加入我们一起玩喵！</p>
+    
+    <p><strong>我们欢迎这样的你加入：</strong></p>
+    <ul>
+        <li>愿意花点时间一起创造的</li>
+        <li>对某些技术有点了解（或者想学），而且愿意把它们变成好玩的东西的</li>
+    </ul>
+    
+    <p><strong>我们相信：</strong></p>
+    <ul>
+        <li>探索本身就是闪闪发光的宝藏✨ —— 无论是做一个网站、一个游戏模组，还是任何有意思的东西，只要你觉得值得探索，就值得我们用心去尝试喵！</li>
+    </ul>
+    
+    <p>期待和你连接在一起，把脑海里的火花变成超可爱的创造力哦～<br>
+    一起织一张更大的网喵~</p>
+    
+    <h2>项目</h2>
+    
+    <h3>目前正在开发的：</h3>
+    <h4><strong>Mindustry</strong></h4>
+    <ul>
+        <li>Mindustry Wiki - 一个 Mindustry 的 Wiki 站
+            <ul>
+                <li>中国新兴wiki站点</li>
+                <li>传送门：https://mindustry.wiki:1080</li>
+                <li>上面的要是坏了，用这个：https://mindustry.cc</li>
+            </ul>
+        </li>
+        <li>Server Tool - Mindustry 服务器通用工具
+            <ul>
+                <li>提供服务器唯一标识（可以用于其他mod统计使用量等）</li>
+                <li>上传服务器信息到我们的开放api，便于玩家以及其他服务查询</li>
+                <li>从我们的或者其他的同步服务器封禁列表，实现<strong>一服封禁，全部同步</strong>，有效遏制作弊者</li>
+                <li>&lt; 正在探索新功能... &gt;</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>来点音乐喵~ 🎵</h2>
+    
+    <div style="text-align: center;" id="bgm">
+    <br>🎧 正在播放        <strong>《Engine x Start!!》</strong> ✨
+    <br>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    <br>⇆         ◁         ▷❚❚         ▷         ↻
+    <br><small>（戳一下试试看喵～）</small>
+    </div>
+    
+    <audio id="bgmAudio" src="https://meshhive.github.io/CrossingSound%20-%20Engine%20x%20Start!!%20(melody%20mix).mp3" preload="auto"></audio>
+    
+    <script>
+    // 简单控制：点击播放/暂停
+    document.addEventListener('DOMContentLoaded', function() {
+      const audio = document.getElementById('bgmAudio');
+      const playPauseBtn = document.getElementById('bgm'); // 需要配合按钮的HTML类名
+      playPauseBtn.addEventListener('click', function() {
+        if (audio.paused) {
+          audio.play();
+          playPauseBtn.innerHTML = `
+    <br>🎧 正在播放        <strong>《Engine x Start!!》</strong> ✨
+    <br>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    <br>⇆         ◁         ❚❚         ▷         ↻
+    <br><small>（戳一下试试看喵～）</small>
+    `;
+        } else {
+          audio.pause();
+                playPauseBtn.innerHTML = `
+    <br>🎧 正在播放        <strong>《Engine x Start!!》</strong> ✨
+    <br>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    <br>⇆         ◁         ▷❚❚         ▷         ↻
+    <br><small>（戳一下试试看喵～）</small>
+    `;
+        }
+      });
+      // 这里只是示例，实际在 GitHub Markdown 中内联脚本可能无法执行
+    });
+    </script>
+    
+    <p><em>希望你能享受到这段BGM，就像享受一杯温暖的牛奶一样惬意喵～</em> 🥛🎶</p>
+</body>
+</html>
