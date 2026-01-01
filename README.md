@@ -15,5 +15,8 @@
 
 期待你得连接，将思维的火花转换为无穷的创造力
 
-<p style="text-align: center;">awa</p>
+<div style="text-align: center;">
+  <p>awa</p>
+</div>
+
 
